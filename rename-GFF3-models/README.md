@@ -7,7 +7,7 @@ usage: rename-GFF3-models.py [-h] [-o OUTPUT] [-f] [-p PREFIX] [-s GENE_START]
                              input
 
 This script renames gene models in GFF3 files. It requires the eigth column of
-each GFF3 row to contain an `ID=*` entry, and a `parent=*` entry for any non-
+each GFF3 row to contain an `ID=*` entry, and a `Parent=*` entry for any non-
 gene annotations. It also requires that the contig names end with their
 number.
 
