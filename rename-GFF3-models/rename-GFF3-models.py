@@ -5,7 +5,7 @@ from sys import stdout, stderr
 from pathlib import Path
 
 parser = argparse.ArgumentParser(
-    description='This script renames gene models in GFF3 files. It requires the eigth column of each GFF3 row to contain an `ID=*` entry, and a `parent=*` entry for any non-gene annotations. It also requires that the contig names end with their number.',
+    description='This script renames gene models in GFF3 files. It requires the eigth column of each GFF3 row to contain an `ID=*` entry, and a `Parent=*` entry for any non-gene annotations. It also requires that the contig names end with their number.',
     formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 parser.add_argument("input", help="Path of input GFF3 file.", type=Path)
 parser.add_argument(
