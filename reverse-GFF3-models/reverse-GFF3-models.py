@@ -39,7 +39,7 @@ assert args.force or args.output_map is None or not args.output_map.exists()
 
 
 def main():
-    contig_ids = {}
+    contig_ids = OrderedDict()
     with args.input.open() as orig:
         for line in orig:
             if line.startswith("#"): continue
