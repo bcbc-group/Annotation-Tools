@@ -71,7 +71,7 @@ def main():
         if args.output_map!=None:
             with args.output_map.open("w") as output_map:
                 for key in id_map:
-                    output_map.write(key+" "+id_map[key]+"\n")
+                    output_map.write(key+"\t"+id_map[key]+"\n")
         
         orig.seek(0) 
         
